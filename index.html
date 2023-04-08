@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user input and condition</title>
+</head>
+<body>
+    <script>
+        // Q1 city
+        var city = prompt("ENTER YOUR CITY")
+        if(city == "karachi"){
+                    alert("Welcome To "+ city + " The City Of Light")}
+                    else
+                        alert("please enter correct city");
+
+        // Q2 gender            
+        
+        var gender = prompt("enter your Gender")
+        if(gender == "male"){
+            alert("Hello Sir Good Morning")
+        }
+        if(gender == "female"){
+            alert("Hello Maam Good Morning")
+        }
+        
+        // Q3 signals
+
+        var signal = prompt ("how are the signal position ?")
+        if(signal == "red"){
+            alert("Must Stop")
+        }
+        if(signal == "yellow"){
+            alert(" Ready To Move")
+        }
+        if(signal == "green"){
+            alert("Move now")
+        }
+
+        // Q4 Fuel litre
+
+        var litre= + prompt("please enter your fuel average 0.01 se lekr 100tk")
+        if (litre > 0.51 ){
+            alert("the fuel "+litre + "litre is ok");
+        }
+         if(litre <= 0.50){
+            alert(litre+" is very low please refill fuel ");
+        }
+
+        // Q5
+//         var a = 4;
+// if (++a === 5){
+// alert("given condition for variable a is true");
+// } 
+//          var b = 82;
+// if (b++ === 83){
+// alert("given condition for variable b is true");
+// }
+//  var c = 12;
+// if (c++ === 13){
+// alert("condition 1 is true");
+// }
+// if (c === 13){
+// alert("condition 2 is true");
+// }
+// if (++c < 14){
+// alert("condition 3 is true");
+// }
+// if(c === 14){
+// alert("condition 4 is true");
+// }
+//  var materialCost = 20000;
+// var laborCost = 2000;
+// var totalCost = materialCost + laborCost;
+// if (totalCost === laborCost + materialCost){
+// alert("The cost equals");
+// }
+//  if (true){
+// alert("True");
+// }
+// if (false){
+// alert("False");
+// }
+//  if("car" < "cat"){
+// alert("car is smaller than cat");
+// }
+
+                    
+// Q6 mark sheet
+document.write("<h1>MARK SHEET</h2>");
+    document.write("<br>");
+    document.write("<br>");
+
+var totalmark = 800;
+var obtainedmark = +prompt("what your obtained mark \n total mark 800");
+var percentage = obtainedmark/totalmark*100;
+var grade1 = "A+"
+var grade2 = "A"
+var grade3 = "B"
+var grade4 = "C"
+var grade5 = "F"
+
+if (percentage < 50  ){
+    document.write("total mark is " + totalmark )
+    document.write("<br>");
+    document.write("<br>");
+    document.write("Obtained mark is " + obtainedmark )
+    document.write("<br>");
+    document.write("<br>");
+    document.write("Percentages is " + percentage )
+    document.write("<br>");
+    document.write("<br>");
+    document.write(" GRADE : " + grade5 +"  FAIL" )
+    document.write("<br>");
+    document.write("<br>");
+    document.write("REMARKS :  SORRY YOU ARE FAIL" )
+    document.write("<br>");
+    document.write("<br>");
+}
+if (percentage >=50 && percentage < 60 ){
+    document.write("total mark is " + totalmark )
+    document.write("<br>");
+    document.write("<br>");
+    document.write("Obtained mark is " + obtainedmark )
+    document.write("<br>");
+    document.write("<br>");
+    document.write("Percentages is " + percentage )
+    document.write("<br>");
+    document.write("<br>");
+    document.write(" GRADE : " + grade4 +"  PASS" )
+    document.write("<br>");
+    document.write("<br>");
+    document.write("REMARKS :  PASS BUT VERY BAD GRADE" )
+    document.write("<br>");
+    document.write("<br>");
+}
+if (percentage >=60 && percentage <70  ){
+    document.write("total mark is " + totalmark )
+    document.write("<br>");
+    document.write("<br>");
+    document.write("Obtained mark is " + obtainedmark )
+    document.write("<br>");
+    document.write("<br>");
+    document.write("Percentages is " + percentage )
+    document.write("<br>");
+    document.write("<br>");
+    document.write(" GRADE : " + grade3 +"  " )
+    document.write("<br>");
+    document.write("<br>");
+    document.write("REMARKS :  NEED TO IMPROVE YOUSELF" )
+    document.write("<br>");
+    document.write("<br>");
+}
+if (percentage >=70 && percentage<80 ){
+    document.write("total mark is " + totalmark )
+    document.write("<br>");
+    document.write("<br>");
+    document.write("Obtained mark is " + obtainedmark )
+    document.write("<br>");
+    document.write("<br>");
+    document.write("Percentages is " + percentage )
+    document.write("<br>");
+    document.write("<br>");
+    document.write(" GRADE : " + grade2 +"  " )
+    document.write("<br>");
+    document.write("<br>");
+    document.write("REMARKS :  GOOD" )
+    document.write("<br>");
+    document.write("<br>");
+}
+if (percentage >=80 && percentage<100 ){
+    document.write("total mark is " + totalmark )
+    document.write("<br>");
+    document.write("<br>");
+    document.write("Obtained mark is " + obtainedmark )
+    document.write("<br>");
+    document.write("<br>");
+    document.write("Percentages is " + percentage )
+    document.write("<br>");
+    document.write("<br>");
+    document.write(" GRADE : " + grade1 +"  " )
+    document.write("<br>");
+    document.write("<br>");
+    document.write("REMARKS :  EXCELLENT" )
+    document.write("<br>");
+    document.write("<br>");
+}
+
+// Q7 bingo
+var num1 = 6
+
+
+
+    var num =+prompt("bingo num \n 1to 10\n6 is correct ans")
+var num = ++num
+if(num == num1){
+    alert( num +" bingo currect number")
+
+}
+else(
+    alert(num+" better luck next time")
+)
+
+
+//Q8 divided by 3
+
+var divid = +prompt("enter any number to \n divided by 3")
+if(divid % 2){
+    alert(divid+" is divided by 3")
+}
+else{
+    alert(divid+" is not divided by 3")
+}
+
+//Q9 odd even
+var odd=+prompt("enter number and verify this numbr is odd ya even")
+if(odd%2 ){
+    alert(odd+" this  is Odd Number")
+}
+else{
+    alert(odd+" this is Even Number")
+}
+
+//Q10 temperature
+
+var tem=+prompt("enter room temperature\n 10C to 40C")
+if(tem >=10 && tem<20){
+    alert("OMG! TODAY WEATHER IS COOL")
+}
+else if(tem >=20 && tem<30){
+    alert("TODAY WEATHER IS COOL")
+}
+else if(tem>=30 && tem<40 ){
+    alert("TODAY WEATHER IS NORMAL")
+}
+else(
+    alert("TODAY WEATHER IS SO HOT")
+)
+
+//Q11 CALCULATOR
+
+var cal1= +prompt("CALCULATOR\nenter first number ")
+var cal2= +prompt("CALCULATOR\nenter second number ")
+var opr= prompt("CALCULATOR\n operation +-*/% ")
+
+if("+"== opr ){
+    alert(cal1+" + "+cal2+" = "+ [cal1+cal2] )
+
+}
+else if("-"== opr){
+    alert(cal1+" - "+cal2+" = "+cal1-cal2)
+}
+else if("*"== opr){
+    alert(cal1+" * "+cal2+" = "+cal1*cal2)
+}
+else if("/"== opr){
+    alert(cal1+" / "+cal2+" = "+cal1/cal2)
+}
+else if("%"== opr){
+    alert(cal1+" % "+cal2+" = "+cal1%cal2)
+}
+else(alert("not found"))
+
+
+
+
+            
+         
+        
+        
+    
+
+    </script>
+</body>
+</html>
